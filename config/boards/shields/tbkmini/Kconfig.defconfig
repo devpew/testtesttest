@@ -9,17 +9,16 @@ if SHIELD_TBKMINI_RIGHT
 
     config ZMK_KEYBOARD_NAME
         default "TBK-Mini(R)"
-        
-    config ZMK_SPLIT_BLE_ROLE_CENTRAL
-        default y
 
 endif
 
 if SHIELD_TBKMINI_LEFT || SHIELD_TBKMINI_RIGHT
-        
-menuconfig ZMK_SPLIT
-	bool "Split keyboard support"
+
+    config ZMK_SPLIT
+        default y
 	
+    config ZMK_SPLIT_BLE
+	default y
 endif
 
 if ZMK_SPLIT
