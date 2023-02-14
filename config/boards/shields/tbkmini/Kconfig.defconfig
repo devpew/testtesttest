@@ -16,12 +16,11 @@ if SHIELD_TBKMINI_RIGHT
 endif
 
 if SHIELD_TBKMINI_LEFT || SHIELD_TBKMINI_RIGHT
-
-    config ZMK_SPLIT
-        default y
         
 menuconfig ZMK_SPLIT
 	bool "Split keyboard support"
+	
+endif
 
 if ZMK_SPLIT
 
