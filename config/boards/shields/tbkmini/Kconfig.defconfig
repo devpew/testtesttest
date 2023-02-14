@@ -3,15 +3,15 @@ if SHIELD_TBKMINI_LEFT
     config ZMK_KEYBOARD_NAME
         default "TBK-Mini(L)"
 
-    config ZMK_SPLIT_BLE_ROLE_CENTRAL
-        default y
-
 endif
 
 if SHIELD_TBKMINI_RIGHT
 
     config ZMK_KEYBOARD_NAME
         default "TBK-Mini(R)"
+        
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
 
 endif
 
